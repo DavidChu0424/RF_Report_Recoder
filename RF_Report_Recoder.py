@@ -30,7 +30,7 @@ for line in f.readlines():
         line = line.replace(">\n","")
         name = line.split("/")
         name = name[-1].replace('"',"")
-        name = name.strip(".robot")
+        name = name.replace(".robot"，"")
         print(name)
         temp.append(name)
     
